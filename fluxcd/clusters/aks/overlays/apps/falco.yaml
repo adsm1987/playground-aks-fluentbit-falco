@@ -12,7 +12,7 @@ spec:
   healthChecks:
   - apiVersion: helm.toolkit.fluxcd.io/v2beta1
     kind: HelmRelease
-    name: fluent
+    name: fluent-bit
     namespace: fluent-bit
   sourceRef:
     kind: GitRepository
