@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: fluentbit
+  namespace: flux-system
+spec:
+  targetNamespace: fluent-bit
+  force: false
+  interval: 0m20s
+  path: ./fluxcd/infrastructure/fluentbit
+  prune: false
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
