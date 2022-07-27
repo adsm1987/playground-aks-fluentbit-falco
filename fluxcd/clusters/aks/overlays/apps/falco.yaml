@@ -7,13 +7,13 @@ spec:
   targetNamespace: falco
   force: false
   interval: 0m20s
-  path: ./fluxcd/infrastructure/falco
+  path: ./fluxcd/apps/falco
   prune: false
   healthChecks:
   - apiVersion: helm.toolkit.fluxcd.io/v2beta1
     kind: HelmRelease
     name: fluent
-    namespace: fluent
+    namespace: falco
   sourceRef:
     kind: GitRepository
     name: flux-system
