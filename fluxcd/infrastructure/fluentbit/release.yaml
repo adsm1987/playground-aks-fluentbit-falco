@@ -322,9 +322,6 @@ spec:
       ## https://docs.fluentbit.io/manual/pipeline/outputs
       outputs: |
         [OUTPUT]
-            Name stdout
-            Match *
-        [OUTPUT]
             Name azure
             Match *
             Customer_ID ${WorkspaceId}
