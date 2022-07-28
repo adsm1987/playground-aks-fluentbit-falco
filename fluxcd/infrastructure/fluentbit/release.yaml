@@ -319,8 +319,6 @@ spec:
             Name kubernetes
             Match kube.*
             Merge_Log Off
-            Keep_Log Off
-            K8S-Logging.Exclude Off
       ## https://docs.fluentbit.io/manual/pipeline/outputs
       outputs: |
         [OUTPUT]
@@ -329,7 +327,9 @@ spec:
         [OUTPUT]
             Name azure
             Match *
-            Customer_ID f263382d-5215-4623-918a-894bb1c49105 
+            Customer_ID ${WorkspaceId}
+            Shared_Key  ${SharedKey}
+            Log_Type    falco
       ## https://docs.fluentbit.io/manual/pipeline/parsers
       customParsers: |
         [PARSER]
