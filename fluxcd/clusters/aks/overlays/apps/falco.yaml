@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   targetNamespace: falco
+  wait: true
   force: false
   interval: 0m20s
   path: ./fluxcd/apps/falco

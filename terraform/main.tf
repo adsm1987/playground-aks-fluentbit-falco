@@ -72,9 +72,9 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     load_balancer_sku = "standard"
   }
 
-  oms_agent {
-    log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
-  }
+  # oms_agent {
+  #   log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
+  # }
 }
 
 resource "azurerm_kubernetes_cluster_node_pool" "custom_nodepools" {

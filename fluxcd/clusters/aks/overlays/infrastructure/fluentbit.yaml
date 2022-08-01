@@ -5,10 +5,11 @@ metadata:
   namespace: flux-system
 spec:
   targetNamespace: fluent-bit
+  wait: true
   force: false
   interval: 0m20s
   path: ./fluxcd/infrastructure/fluentbit
-  prune: false
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
