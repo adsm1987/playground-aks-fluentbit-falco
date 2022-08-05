@@ -29,7 +29,7 @@ function main()
     local -r infra_cluster_name="aks-fluentbit-falco"
     local -r infra_tf_folder="terraform"
     local -r flux_github_user="adsm1987"
-    local -r flux_github_repo="playground-aks-fluentbit"
+    local -r flux_github_repo="playground-aks-fluentbit-falco"
     local -r flux_github_path="./fluxcd/clusters/aks"
 
     echo "To run this script you need the following CLIs installed:"

@@ -327,6 +327,7 @@ spec:
             Customer_ID ${WorkspaceId}
             Shared_Key  ${SharedKey}
             Log_Type    falco
+            Time_Generated On
       ## https://docs.fluentbit.io/manual/pipeline/parsers
       customParsers: |
         [PARSER]
